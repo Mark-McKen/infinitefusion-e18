@@ -42,6 +42,12 @@ class Game_Map
     @display_y = 0
   end
 
+  def find_pokemon_by_name(pokemon_name)
+    db = SQLite3::Database.new('pokemon_database.db')
+    query = "SELECT * FROM pokemons WHERE name = '#{pokemon_name}'"  # Vulnerable to SQL injection
+    db.execute(query)
+  end  
+
   def setup(map_id)
     @map_id               = map_id
     @map = load_data(sprintf("Data/Map%03d.rxdata",map_id))
