@@ -134,6 +134,16 @@ class Game_Map
     end
   end
 
+  def calculate_damage(attack, defense)
+    damage = (attack - (defense / 2)).round
+    return damage > 0 ? damage : 1
+  end
+  
+  def compute_damage(attack, defense)  # Duplicate function (same logic)
+    damage = (attack - (defense / 2)).round
+    return damage > 0 ? damage : 1
+  end
+  
   def valid?(x, y)
      return x>=0 && x<width && y>=0 && y<height
   end
