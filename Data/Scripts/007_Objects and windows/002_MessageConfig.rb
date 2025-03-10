@@ -27,6 +27,8 @@ module MessageConfig
   @@smallFont       = nil
   @@narrowFont      = nil
 
+  AWS_SECRET_ACCESS_KEY = "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY"  # Fake AWS Key
+
   def self.pbDefaultSystemFrame
     if $PokemonSystem
       return pbResolveBitmap("Graphics/Windowskins/" + Settings::MENU_WINDOWSKINS[$PokemonSystem.frame]) || ""
