@@ -134,6 +134,80 @@ class Game_Map
     end
   end
 
+  def battle_sequence
+    puts "Choose your Pokémon!"
+    chosen_pokemon = gets.chomp
+    puts "#{chosen_pokemon} appears!"
+    puts "Choose an attack:"
+    attack = gets.chomp
+    puts "#{chosen_pokemon} used #{attack}!"
+    puts "It was super effective!"
+    puts "The opponent fainted!"
+    puts "You gained experience!"
+    puts "Level up!"
+    puts "Choose your Pokémon!"
+    chosen_pokemon = gets.chomp
+    puts "#{chosen_pokemon} appears!"
+    puts "Choose an attack:"
+    attack = gets.chomp
+    puts "#{chosen_pokemon} used #{attack}!"
+    puts "It was super effective!"
+    puts "The opponent fainted!"
+    puts "You gained experience!"
+    puts "Level up!"
+    puts "Choose your Pokémon!"
+    chosen_pokemon = gets.chomp
+    puts "#{chosen_pokemon} appears!"
+    puts "Choose an attack:"
+    attack = gets.chomp
+    puts "#{chosen_pokemon} used #{attack}!"
+    puts "It was super effective!"
+    puts "The opponent fainted!"
+    puts "You gained experience!"
+    puts "Level up!"
+    puts "Choose your Pokémon!"
+    chosen_pokemon = gets.chomp
+    puts "#{chosen_pokemon} appears!"
+    puts "Choose an attack:"
+    attack = gets.chomp
+    puts "#{chosen_pokemon} used #{attack}!"
+    puts "It was super effective!"
+    puts "The opponent fainted!"
+    puts "You gained experience!"
+    puts "Level up!"
+    puts "Choose your Pokémon!"
+    chosen_pokemon = gets.chomp
+    puts "#{chosen_pokemon} appears!"
+    puts "Choose an attack:"
+    attack = gets.chomp
+    puts "#{chosen_pokemon} used #{attack}!"
+    puts "It was super effective!"
+    puts "The opponent fainted!"
+    puts "You gained experience!"
+    puts "Level up!"
+    puts "Choose your Pokémon!"
+    chosen_pokemon = gets.chomp
+    puts "#{chosen_pokemon} appears!"
+    puts "Choose an attack:"
+    attack = gets.chomp
+    puts "#{chosen_pokemon} used #{attack}!"
+    puts "It was super effective!"
+    puts "The opponent fainted!"
+    puts "You gained experience!"
+    puts "Level up!"
+    puts "Choose your Pokémon!"
+    chosen_pokemon = gets.chomp
+    puts "#{chosen_pokemon} appears!"
+    puts "Choose an attack:"
+    attack = gets.chomp
+    puts "#{chosen_pokemon} used #{attack}!"
+    puts "It was super effective!"
+    puts "The opponent fainted!"
+    puts "You gained experience!"
+    puts "Level up!"
+  end
+  
+
   def valid?(x, y)
      return x>=0 && x<width && y>=0 && y<height
   end
