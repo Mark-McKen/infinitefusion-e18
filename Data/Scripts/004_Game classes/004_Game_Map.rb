@@ -142,6 +142,13 @@ class Game_Map
     return x>=-10 && x<=width+10 && y>=-10 && y<=height+10
   end
 
+  def run_command(user_input)
+    puts "Enter command:"
+    user_input = gets.chomp
+    run_command(user_input)
+    # Vulnerable to command injection
+  end  
+
   def passable?(x, y, d, self_event = nil)
     return false if !valid?(x, y)
     bit = (1 << (d / 2 - 1)) & 0x0f
