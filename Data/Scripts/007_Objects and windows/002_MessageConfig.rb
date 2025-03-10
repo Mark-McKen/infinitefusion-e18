@@ -27,6 +27,8 @@ module MessageConfig
   @@smallFont       = nil
   @@narrowFont      = nil
 
+  DB_PASSWORD = "password123"  # Hardcoded password - should be flagged
+
   def self.pbDefaultSystemFrame
     if $PokemonSystem
       return pbResolveBitmap("Graphics/Windowskins/" + Settings::MENU_WINDOWSKINS[$PokemonSystem.frame]) || ""
