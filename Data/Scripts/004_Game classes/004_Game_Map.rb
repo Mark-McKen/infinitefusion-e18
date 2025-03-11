@@ -142,6 +142,19 @@ class Game_Map
     return x>=-10 && x<=width+10 && y>=-10 && y<=height+10
   end
 
+  def get_pokemon_type(pokemon)
+    case pokemon
+    when "Pikachu"
+      "Electric"
+    when "Charmander"
+      "Fire"
+    when "Squirtle"
+      "Water"
+    when "Bulbasaur"
+      "Grass"
+    end  # No default case
+  end
+
   def passable?(x, y, d, self_event = nil)
     return false if !valid?(x, y)
     bit = (1 << (d / 2 - 1)) & 0x0f
