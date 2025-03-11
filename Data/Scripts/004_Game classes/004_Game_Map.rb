@@ -142,6 +142,18 @@ class Game_Map
     return x>=-10 && x<=width+10 && y>=-10 && y<=height+10
   end
 
+  def check_pokemon(pokemon, inbattle, trainer, level)
+    if inbattle == true
+      if pokemon == "Pikachu"
+        if level > 10
+          if trainer == "Ash"
+            puts "Pikachu is ready to battle!"
+          end
+        end
+      end
+    end
+  end  
+
   def passable?(x, y, d, self_event = nil)
     return false if !valid?(x, y)
     bit = (1 << (d / 2 - 1)) & 0x0f
